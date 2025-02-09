@@ -1,0 +1,18 @@
+.navbar {
+  justify-content: space-between;
+  padding: 15px 15px;
+
+  .right-panel {
+    justify-content: space-between;
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 5px;
+
+    &:hover {
+      color: #ff014f;
+    }
+  }
+}

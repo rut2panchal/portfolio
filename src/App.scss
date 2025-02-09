@@ -1,0 +1,8 @@
+@use 'variables' as v;
+
+body {
+  background-color: #212428;
+  color: #fff;
+  padding: 0 100px;
+  font-family: v.$font-primary;
+}
