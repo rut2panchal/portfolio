@@ -1,0 +1,31 @@
+.navbar {
+  justify-content: space-between;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  // position: sticky;
+
+  .title-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .right-panel {
+    justify-content: space-between;
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+
+    &:hover {
+      color: #ff014f;
+    }
+  }
+}
