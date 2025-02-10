@@ -1,0 +1,20 @@
+{
+  "WelcomeText": "Welcome to my world",
+  "Greetings": "Hi, I'm",
+  "Name": "Rutvik Panchal",
+  "Role": "a Full-Stack Developer",
+  "Description": "Full-Stack Developer with 4+ years of experience delivering enterprise-grade web applications using C#, .NET Core, Angular, and ReactJS, enhancing system scalability and driving user engagement by 40%.",
+  "SkillsHeader": "Best Skills On",
+  "Skills": [
+    "C#",
+    ".NET Core",
+    "Angular",
+    "ReactJS",
+    "SQL Server",
+    "MongoDB",
+    "Azure",
+    "AWS",
+    "Docker",
+    "Kubernetes"
+  ]
+}
