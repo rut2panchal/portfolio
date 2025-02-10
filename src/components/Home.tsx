@@ -9,7 +9,7 @@ const Home = () => {
         <Box className="left-panel">
           <Image
             className="profile-image"
-            src="/public/profile-nobg.png"
+            src="/profile-nobg.png"
             alt={Data.Name}
             height={600}
           />
