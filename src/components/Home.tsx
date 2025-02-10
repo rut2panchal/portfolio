@@ -1,22 +1,46 @@
 import "./Home.scss";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import Data from "../assets/content.json";
 
 const Home = () => {
   return (
     <>
       <Flex className="home">
         <Box className="left-panel">
-          <Text mb={20}>Welcome to my world</Text>
-          <Heading className="header" as="h1" m={0}>
-            Hi, I'm <span className="name">Rutvik Panchal</span>
-          </Heading>
-          <Heading as="h1" className="secondary-header" mt={10}>
-            <span>a </span>
-
-            <span>Full-Stack Developer</span>
-          </Heading>
+          <Image
+            className="profile-image"
+            src="/public/profile-nobg.png"
+            alt={Data.Name}
+            height={600}
+          />
         </Box>
-        <Box className="right-panel">right panel</Box>
+        <Box className="right-panel">
+          <Text className="welcome-text" mb={20}>
+            {Data.WelcomeText}
+          </Text>
+          <Heading className="header" as="h1" m={0}>
+            {Data.Greetings} <span className="name">{Data.Name}</span>
+          </Heading>
+          <Heading className="secondary-header" as="h1" mt={10}>
+            {Data.Role}
+          </Heading>
+          <Text className="description" mt={10}>
+            {Data.Description}
+          </Text>
+          <Box className="skills">
+            <Heading className="skills-header" as="h2" mt={20}>
+              {Data.SkillsHeader}
+            </Heading>
+            {/* <Text className="skills-description">{Data.SkillsDescription}</Text> */}
+            <Flex className="skills-list">
+              {Data.Skills.map((skill, index) => (
+                <Box key={index} className="skill">
+                  <span>{skill}</span>
+                </Box>
+              ))}
+            </Flex>
+          </Box>
+        </Box>
       </Flex>
     </>
   );

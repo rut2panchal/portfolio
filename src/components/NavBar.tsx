@@ -1,38 +1,39 @@
 import { Box, HStack, Link } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 import "./NavBar.scss";
+import Data from "../assets/content.json";
 
 const NavBar = () => {
   const NavBarItems = [
     {
-      name: "HOME",
+      name: "Home",
       link: "home",
     },
     {
-      name: "FEATURES",
+      name: "Features",
       link: "features",
     },
     {
-      name: "PORTFOLIO",
+      name: "Portfolio",
       link: "portfolio",
     },
     {
-      name: "RESUME",
+      name: "Resume",
       link: "resume",
     },
     {
-      name: "PROJECTS",
+      name: "Projects",
       link: "projects",
     },
     {
-      name: "CONTACTS",
-      link: "contacts",
+      name: "Contact Me",
+      link: "contact-me",
     },
   ];
   return (
     <>
       <HStack className="navbar">
-        <Box>Rutvik Panchal</Box>
+        <Box className="title-icon">{Data.Name}</Box>
         <Box>
           <HStack className="right-panel">
             {NavBarItems.map((item) => (

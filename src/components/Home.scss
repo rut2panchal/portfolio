@@ -3,11 +3,13 @@
 .home {
   padding: 15px;
   justify-content: space-between;
+  align-items: center;
 
-  .left-panel {
+  .right-panel {
     font-family: v.$font-secondary;
 
-    p {
+
+    .welcome-text {
       font-size: 14px;
       color: v.$color-lightn;
       letter-spacing: 3px;
@@ -16,7 +18,6 @@
     }
 
     .header {
-      font-weight: 700;
       font-size: 54px;
 
       .name {
@@ -25,10 +26,25 @@
     }
 
     .secondary-header {
-      font-weight: 700;
       font-size: 48px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 30px;
+      color: v.$color-lightn;
+      margin-top: 20px;
+      opacity: 0.8;
     }
   }
 
-  .right-panel {}
+  .left-panel {}
+
+  .skills-list {
+    flex-wrap: wrap;
+
+    .skill {
+      padding: 10px 10px 10px 0;
+    }
+  }
 }
